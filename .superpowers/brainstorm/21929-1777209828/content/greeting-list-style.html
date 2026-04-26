@@ -1,0 +1,95 @@
+<h2>あいさつ一覧はどう表示しますか？</h2>
+<p class="subtitle">グラデーション背景に合わせた一覧スタイルを選んでください</p>
+
+<div class="cards">
+  <div class="card" data-choice="cards-grid" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:linear-gradient(135deg,#667eea,#764ba2);padding:16px;border-bottom:1px solid #e2e8f0">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+        <div style="background:rgba(255,255,255,0.2);border-radius:8px;padding:10px">
+          <div style="font-size:11px;font-weight:700;color:white;margin-bottom:3px">田中さん</div>
+          <div style="font-size:10px;color:rgba(255,255,255,0.8)">こんにちは！</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.2);border-radius:8px;padding:10px">
+          <div style="font-size:11px;font-weight:700;color:white;margin-bottom:3px">山田さん</div>
+          <div style="font-size:10px;color:rgba(255,255,255,0.8)">よろしくです</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.2);border-radius:8px;padding:10px">
+          <div style="font-size:11px;font-weight:700;color:white;margin-bottom:3px">鈴木さん</div>
+          <div style="font-size:10px;color:rgba(255,255,255,0.8)">はじめまして！</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.2);border-radius:8px;padding:10px">
+          <div style="font-size:11px;font-weight:700;color:white;margin-bottom:3px">佐藤さん</div>
+          <div style="font-size:10px;color:rgba(255,255,255,0.8)">よろしく！</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A. グリッドカード</h3>
+      <p>2列グリッドでカード表示。コンパクトにたくさん見える。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="chat-bubble" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:linear-gradient(135deg,#667eea,#764ba2);padding:16px;border-bottom:1px solid #e2e8f0">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div style="display:flex;align-items:flex-start;gap:8px">
+          <div style="width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,0.3);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:white;font-weight:700">田</div>
+          <div style="background:rgba(255,255,255,0.2);border-radius:0 10px 10px 10px;padding:8px 12px;max-width:80%">
+            <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.9);margin-bottom:2px">田中さん</div>
+            <div style="font-size:11px;color:white">こんにちは！</div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:8px">
+          <div style="width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,0.3);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:white;font-weight:700">山</div>
+          <div style="background:rgba(255,255,255,0.2);border-radius:0 10px 10px 10px;padding:8px 12px;max-width:80%">
+            <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.9);margin-bottom:2px">山田さん</div>
+            <div style="font-size:11px;color:white">よろしくです！</div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:8px">
+          <div style="width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,0.3);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:white;font-weight:700">鈴</div>
+          <div style="background:rgba(255,255,255,0.2);border-radius:0 10px 10px 10px;padding:8px 12px;max-width:80%">
+            <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.9);margin-bottom:2px">鈴木さん</div>
+            <div style="font-size:11px;color:white">はじめまして！</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B. チャット風</h3>
+      <p>アバター付きのチャットバブル形式。会話感があってにぎやか。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="list-clean" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:linear-gradient(135deg,#667eea,#764ba2);padding:16px;border-bottom:1px solid #e2e8f0">
+      <div style="background:rgba(255,255,255,0.15);border-radius:10px;overflow:hidden">
+        <div style="padding:10px 14px;border-bottom:1px solid rgba(255,255,255,0.15);display:flex;align-items:center;gap:10px">
+          <div style="width:6px;height:6px;border-radius:50%;background:#a5f3fc;flex-shrink:0"></div>
+          <div>
+            <span style="font-size:11px;font-weight:700;color:white">田中さん</span>
+            <span style="font-size:11px;color:rgba(255,255,255,0.7)"> — こんにちは！</span>
+          </div>
+        </div>
+        <div style="padding:10px 14px;border-bottom:1px solid rgba(255,255,255,0.15);display:flex;align-items:center;gap:10px">
+          <div style="width:6px;height:6px;border-radius:50%;background:#a5f3fc;flex-shrink:0"></div>
+          <div>
+            <span style="font-size:11px;font-weight:700;color:white">山田さん</span>
+            <span style="font-size:11px;color:rgba(255,255,255,0.7)"> — よろしくです！</span>
+          </div>
+        </div>
+        <div style="padding:10px 14px;display:flex;align-items:center;gap:10px">
+          <div style="width:6px;height:6px;border-radius:50%;background:#a5f3fc;flex-shrink:0"></div>
+          <div>
+            <span style="font-size:11px;font-weight:700;color:white">鈴木さん</span>
+            <span style="font-size:11px;color:rgba(255,255,255,0.7)"> — はじめまして！</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C. スリムリスト</h3>
+      <p>シンプルな縦リスト。名前とメッセージを横並びでスッキリ表示。</p>
+    </div>
+  </div>
+</div>
