@@ -53,7 +53,7 @@
                 <div class="w-9 h-9 rounded-full bg-white/25 border-2 border-white/30 flex-shrink-0 flex items-center justify-center text-sm font-bold text-white">
                     {{ mb_substr($greeting->name, 0, 1) }}
                 </div>
-                <div class="bg-white/15 border border-white/20 rounded-tl-none rounded-2xl px-4 py-2.5 flex-1">
+                <div class="bg-white/15 border border-white/20 rounded-2xl rounded-tl-none px-4 py-2.5 flex-1">
                     <p class="text-xs font-bold text-white/90 mb-0.5">{{ $greeting->name }}</p>
                     <p class="text-sm text-white">{{ $greeting->message }}</p>
                 </div>
