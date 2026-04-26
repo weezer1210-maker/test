@@ -3,3 +3,4 @@
 {"type":"screen-added","file":"/home/ryota/project/test/.superpowers/brainstorm/21929-1777209828/content/greeting-list-style.html"}
 {"source":"user-event","type":"click","text":"田\n          \n            田中さん\n            こんにちは！\n          \n        \n        \n          山\n          \n            山田さん\n            よろしくです！\n          \n        \n        \n          鈴\n          \n            鈴木さん\n            はじめまして！\n          \n        \n      \n    \n    \n      B. チャット風\n      アバター付きのチャットバブル形式。会話感があってにぎやか。","choice":"chat-bubble","id":null,"timestamp":1777209916827}
 {"type":"screen-added","file":"/home/ryota/project/test/.superpowers/brainstorm/21929-1777209828/content/full-mockup.html"}
+{"type":"server-stopped","reason":"owner process exited"}
